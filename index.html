@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Externe Reklamationen und verkaufte Fahrzeuge von Autohaus Siebrecht GmbH, Übergabe ab 01.01.2025.">
+<meta property="og:title" content="Autohaus Siebrecht GmbH – Reklamationen vs. verkaufte Fahrzeuge">
+<meta property="og:description" content="51 übergebene Fahrzeuge, 28 Reklamationen, Stand 15.10.2026.">
+<title>Siebrecht Reklamationen 2025–26</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: stacked 16:10 slides on a quiet desk; one donut per slide with a legend that carries the numbers */
+:root{
+  --bg:#ffffff; --slide:#ffffff; --fg:#17202a; --muted:#5b6672; --line:#dde1e6;
+  --accent:#c2552b;          /* prodejce / vendor */
+  --c-slate:#5f7387;         /* not a problem */
+  --c-teal:#2f8f86;          /* transport / OK */
+  --c-sand:#d7a54a;
+  --c-plum:#7b5ea7;
+  --c-faint:#c3c9d1;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+*{box-sizing:border-box}
+html{color-scheme:light;-webkit-text-size-adjust:100%}
+body{margin:0}
+img{max-width:100%}
+/* Instamotion logo watermark across the whole presentation; logo file sits next to index.html */
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:url("instamotion-logo.svg") center/min(78vw,960px) auto no-repeat;opacity:.07}
+.deck,.nav{position:relative;z-index:1}
+.nav{position:fixed}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:32px 64px}
+.deck{max-width:1120px;margin:0 auto;display:grid;gap:32px}
+.slide{background:transparent;border:1px solid var(--line);border-radius:10px;padding:clamp(24px,4vw,56px);
+  display:flex;flex-direction:column;gap:28px;position:relative;scroll-margin-top:16px}
+.slide:focus{outline:2px solid var(--accent);outline-offset:3px}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;gap:12px}
+h1,h2{font-family:var(--display);font-weight:700;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(34px,5.6vw,64px);line-height:1.02}
+h2{font-size:clamp(26px,3.4vw,38px);line-height:1.1}
+.lede{color:var(--muted);max-width:62ch;margin:0;font-size:18px}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-top:auto}
+.kpi{background:rgba(255,255,255,.85);padding:20px 18px;display:flex;flex-direction:column;gap:4px}
+.kpi b{font-family:var(--display);font-size:clamp(30px,3.6vw,42px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.kpi span{color:var(--muted);font-size:14.5px}
+.kpi.hot b{color:var(--accent)}
+
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:center;flex:1}
+@media (max-width:760px){.split{grid-template-columns:1fr}}
+.donut{width:100%;max-width:380px;aspect-ratio:1;margin:0 auto;display:block}
+.donut text{fill:var(--fg)}
+.legend{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.legend li{display:grid;grid-template-columns:14px minmax(0,1fr) auto auto;gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--line)}
+.legend li:last-child{border-bottom:0}
+.sw{width:14px;height:14px;border-radius:3px;align-self:center}
+.legend .n{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:500;text-align:right;min-width:3ch}
+.legend .p{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--muted);text-align:right;min-width:6ch}
+.legend small{display:block;color:var(--muted);font-size:14px;line-height:1.35}
+.note{border-left:3px solid var(--accent);padding:4px 0 4px 16px;color:var(--fg);max-width:70ch;margin:0}
+.note.quiet{border-color:var(--line);color:var(--muted)}
+
+.bars{display:grid;gap:18px;flex:1;align-content:center}
+.bar{display:grid;grid-template-columns:minmax(120px,190px) minmax(0,1fr) 5ch;gap:16px;align-items:center}
+.bar .track{height:30px;background:color-mix(in srgb,var(--line) 60%,transparent);border-radius:4px;overflow:hidden}
+.bar .fill{height:100%;border-radius:4px}
+.bar .v{font-family:var(--mono);text-align:right}
+@media (max-width:520px){.bar{grid-template-columns:1fr 4ch}.bar .track{grid-column:1/-1;grid-row:2}}
+
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:880px;font-size:14.5px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500;background:#f7f8f9;position:sticky;top:0}
+td.num{white-space:nowrap;text-align:right}
+tr:last-child td{border-bottom:0}
+.chip{display:inline-block;font-family:var(--mono);font-size:11.5px;padding:2px 8px;border-radius:999px;white-space:nowrap;border:1px solid currentColor}
+.chip.vendor{color:var(--accent)} .chip.nap{color:var(--c-slate)} .chip.transport{color:var(--c-teal)} .chip.none{color:var(--muted)}
+.method{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px 32px}
+.method div{display:flex;flex-direction:column;gap:4px}
+.method b{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.method p{margin:0}
+.nav{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));display:flex;gap:6px}
+.nav button{font:500 13px var(--mono);background:var(--slide);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:8px 12px;cursor:pointer}
+.nav button:hover{border-color:var(--accent)}
+.nav button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+
+</head>
+<body>
+<main class="deck" id="deck">
+
+<!-- 1 -->
+<section class="slide" tabindex="-1">
+  <div class="eyebrow"><span>Händleranalyse · Salesforce</span><span>01.01.2025 – 15.10.2026</span></div>
+  <h1>Autohaus Siebrecht GmbH<br>Reklamationen vs. verkaufte Fahrzeuge</h1>
+  <p class="lede">Externe Reklamationen zu Fahrzeugen dieses Händlers, die ab dem 01.01.2025 an Kunden übergeben wurden. Doppelte und fehlerhafte Reklamationseinträge sind ausgeschlossen. 45 Fahrzeuge wurden über IM Marketplace abgerechnet (direkt vom Händler zum Kunden), 6 über Carvago via Varnsdorf. Beide Gesellschaften gehören zu einer Gruppe, daher werden die Zahlen gemeinsam ausgewiesen.</p>
+  <div class="kpis">
+    <div class="kpi"><b class="num">51</b><span>übergebene Fahrzeuge</span></div>
+    <div class="kpi"><b class="num">28</b><span>externe Reklamationen</span></div>
+    <div class="kpi hot"><b class="num">54,9 %</b><span>Reklamationen pro verkauftes Fahrzeug</span></div>
+    <div class="kpi"><b class="num">43,1 %</b><span>der Fahrzeuge mit mind. 1 Reklamation</span></div>
+    <div class="kpi"><b class="num">6.962 €</b><span>Reklamationskosten</span></div>
+    <div class="kpi hot"><b class="num">8,2 %</b><span>der vom Händler verursachten Kosten trug der Händler (252 € von 3.088 €)</span></div>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="slide" tabindex="-1">
+  <div class="eyebrow"><span>Anteil reklamierter Fahrzeuge</span><span>n = 51 Fahrzeuge</span></div>
+  <h2>Fast jedes zweite Fahrzeug kam mit einer Reklamation zurück</h2>
+  <div class="split">
+    <svg class="donut" data-donut="cars" viewBox="0 0 200 200" role="img" aria-label="Anteil der Fahrzeuge mit Reklamation"></svg>
+    <div style="display:grid;gap:20px">
+      <ul class="legend" data-legend="cars"></ul>
+      <p class="note quiet">Von 22 reklamierten Fahrzeugen hatten 17 eine Reklamation, 4 zwei und 1 Fahrzeug drei (Auftrag 656738).</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="slide" tabindex="-1">
+  <div class="eyebrow"><span>Ursache</span><span>n = 28 Reklamationen</span></div>
+  <h2>Ein Drittel der Reklamationen lag beim Händler</h2>
+  <div class="split">
+    <svg class="donut" data-donut="source" viewBox="0 0 200 200" role="img" aria-label="Reklamationen nach Ursache"></svg>
+    <div style="display:grid;gap:20px">
+      <ul class="legend" data-legend="source"></ul>
+      <p class="note">9 Reklamationen mit Ursache „Händler“ entsprechen 17,6 % der verkauften Fahrzeuge.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="slide" tabindex="-1">
+  <div class="eyebrow"><span>Art des Mangels</span><span>n = 28 Reklamationen</span></div>
+  <h2>Am häufigsten fehlt, was im Fahrzeug sein sollte</h2>
+  <div class="split">
+    <svg class="donut" data-donut="type" viewBox="0 0 200 200" role="img" aria-label="Reklamationen nach Art des Mangels"></svg>
+    <ul class="legend" data-legend="type"></ul>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="slide" tabindex="-1">
+  <div class="eyebrow"><span>Vom Händler verursachte Kosten</span><span>9 Reklamationen · Cost EUR 3.087,66 €</span></div>
+  <h2>Von den Kosten, die der Händler verursacht hat, zahlte er 8,2 %</h2>
+  <div class="split">
+    <svg class="donut" data-donut="cost" viewBox="0 0 200 200" role="img" aria-label="Wer die Kosten der Händler-Reklamationen trug"></svg>
+    <div style="display:grid;gap:20px">
+      <ul class="legend" data-legend="cost"></ul>
+      <p class="note">Eine finanzielle Beteiligung des Händlers ist nur bei C-004413 erfasst: 252,10 € netto. Das Zahlungseingangsdatum fehlt.</p>
+      <p class="note quiet">Die Gesamtkosten aller 28 Reklamationen betragen 6.961,57 €. Der Rest entfällt auf Reklamationen ohne Mangel (3.705,84 €) und Transport (168,07 €); dort wird keine Händlerbeteiligung erwartet.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="slide" tabindex="-1">
+  <div class="eyebrow"><span>Reaktion des Händlers</span><span>n = 9 Reklamationen mit Ursache „Händler“</span></div>
+  <h2>Wie sich der Händler beteiligt hat, wenn der Fehler bei ihm lag</h2>
+  <div class="split">
+    <svg class="donut" data-donut="seller" viewBox="0 0 200 200" role="img" aria-label="Beteiligung des Händlers"></svg>
+    <ul class="legend" data-legend="seller"></ul>
+  </div>
+</section>
+
+<!-- 7 -->
+<section class="slide" tabindex="-1">
+  <div class="eyebrow"><span>Wann Kunden reklamieren</span><span>Tage nach Fahrzeugübergabe</span></div>
+  <h2>Die meisten Reklamationen kommen in der ersten Woche nach Übergabe</h2>
+  <div class="bars" id="bars"></div>
+  <p class="note quiet">Frühe Reklamationen betreffen meist fehlende Ausstattung und bei Übernahme sichtbare Karosserieschäden. Spätere (über 30 Tage) sind technisch: Klimaanlage, Elektronik, Batterie; ein Teil davon wurde von der Garantie übernommen (Allianz, CarGarantie).</p>
+</section>
+
+<!-- 8 -->
+<section class="slide" tabindex="-1">
+  <div class="eyebrow"><span>Reklamationsliste</span><span>28 Einträge</span></div>
+  <h2>Alle Reklamationen im Zeitraum</h2>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Reklamation</th><th>Datum</th><th>Auftrag</th><th>Worum es ging</th><th>Ursache</th><th style="text-align:right">Kosten €</th><th>Händler</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 9 -->
+<section class="slide" tabindex="-1">
+  <div class="eyebrow"><span>Methodik</span><span>Datenstand 15.10.2026</span></div>
+  <h2>Woher die Zahlen kommen</h2>
+  <div class="method">
+    <div><b>Verkaufte Fahrzeuge</b><p>Aufträge (Order) mit Vendor Account „Autohaus Siebrecht GmbH“, Hand Over Date ab 01.01.2025, ohne Testaufträge. Alle 51 haben den Status Completed.</p></div>
+    <div><b>Reklamationen</b><p>Complaints vom Typ External zu diesen Aufträgen. Ausgeschlossen: C-004603 (Duplikat zu C-004591), C-002827 (als ERROR markiert) und C-000597 (Fahrzeug 2024 übergeben).</p></div>
+    <div><b>Kosten</b><p>Feld Cost EUR: tatsächliche oder erwartete Kosten der Leistungen. Garantieleistungen (Allianz, CarGarantie) sind darin nicht immer enthalten.</p></div>
+    <div><b>Händlerbeteiligung</b><p>Feld Seller Participation Without VAT (EUR) und Grund für fehlende Beteiligung. Bei C-001379 und C-002252 erwähnen die Notizen eine Weiterbelastung an den Händler, ein Betrag ist jedoch nicht erfasst.</p></div>
+    <div><b>Abrechnung</b><p>45 Fahrzeuge über IM Marketplace (direkt vom Händler zum Kunden), 5 über Carvago Deutschland GmbH und 1 über Carvago s.r.o. (beide über STK Varnsdorf, Kunden aus Tschechien). Auf diese 6 Fahrzeuge entfallen 2 Reklamationen, beide ohne Mangel. Alle 9 Reklamationen mit Ursache „Händler“ betreffen IM Marketplace. Carvago und Instamotion gehören zu einer Gruppe, daher werden die Zahlen nicht aufgeteilt.</p></div>
+    <div><b>Art des Mangels</b><p>Manuelle Zuordnung in vier Gruppen anhand der Reklamationsbeschreibung und der Teamnotizen.</p></div>
+    <div><b>Doppelte Accounts</b><p>Der Händler ist in Salesforce als Dutzende separate Accounts mit gleichem Namen angelegt. Die Daten sind über den Namen zusammengeführt.</p></div>
+  </div>
+</section>
+
+</main>
+
+<nav class="nav" aria-label="Präsentationsnavigation">
+  <button type="button" id="prev" aria-label="Vorherige Folie">↑</button>
+  <button type="button" id="pos" aria-live="polite">1 / 9</button>
+  <button type="button" id="next" aria-label="Nächste Folie">↓</button>
+</nav>
+
+<script>
+const V = 'var(--accent)', S = 'var(--c-slate)', T = 'var(--c-teal)', D = 'var(--c-sand)', P = 'var(--c-plum)', F = 'var(--c-faint)';
+const charts = {
+  cars: { center:['22','von 51 Fzg.'], fmt:'n', items:[
+    {l:'Mit Reklamation', n:22, c:V, d:'insgesamt 28 Reklamationen'},
+    {l:'Ohne Reklamation', n:29, c:F}]},
+  source: { center:['28','Reklamationen'], fmt:'n', items:[
+    {l:'Kein Mangel / abgelehnt', n:17, c:S, d:'Verschleiß, Garantie, nicht nachweisbar'},
+    {l:'Händler', n:9, c:V, d:'fehlende Ausstattung, nicht eingehaltene Zusagen'},
+    {l:'Transport', n:1, c:T},
+    {l:'Noch nicht bewertet', n:1, c:F, d:'C-004713, offen'}]},
+  type: { center:['28','Reklamationen'], fmt:'n', items:[
+    {l:'Fehlende Ausstattung und Unterlagen', n:9, c:V, d:'Ladekabel, Sommerräder, Schlüssel, Abdeckungen, Pannenkit, Serviceunterlagen'},
+    {l:'Elektrik und Elektronik', n:7, c:P, d:'Fensterheber, Schlüssel, Infotainment, Tempomat, 12-V-Batterie'},
+    {l:'Karosserie und Optik', n:6, c:D, d:'Kratzer, Dellen, Lack, verschmutzter Innenraum'},
+    {l:'Mechanik und Klimaanlage', n:6, c:S, d:'Klimaanlage, Reifen und Spur, Start-Stopp, Lüfter'}]},
+  cost: { center:['3.088 €','Ursache Händler'], fmt:'eur', items:[
+    {l:'Getragen von Carvago', n:2835.56, c:S, d:'Kundenkompensationen und Reparaturen'},
+    {l:'Getragen vom Händler', n:252.10, c:V, d:'C-004413, netto'}]},
+  seller: { center:['9','reklamací'], fmt:'n', items:[
+    {l:'Mangel nicht anerkannt', n:3, c:V, d:'C-003315, C-003368, C-003528 (Ladekabel, Pannenkit)'},
+    {l:'Beteiligung nicht erfasst', n:3, c:F, d:'C-001379, C-002252, C-002599'},
+    {l:'Finanzielle Beteiligung', n:1, c:T, d:'C-004413: 252,10 € netto'},
+    {l:'Sachleistung', n:1, c:D, d:'C-004050: fehlende Räder nachgeliefert'},
+    {l:'B2B, keine Beteiligung', n:1, c:S, d:'C-004696: fehlende Serviceunterlagen'}]},
+};
+const nf = new Intl.NumberFormat('de-DE',{maximumFractionDigits:0});
+const pf = new Intl.NumberFormat('de-DE',{maximumFractionDigits:1,minimumFractionDigits:1});
+const NS='http://www.w3.org/2000/svg';
+
+for (const [key, ch] of Object.entries(charts)) {
+  const total = ch.items.reduce((a,b)=>a+b.n,0);
+  const svg = document.querySelector(`[data-donut="${key}"]`);
+  const r = 70, C = 2*Math.PI*r, gap = ch.items.length>1 ? 1.2 : 0;
+  let off = 0;
+  const bg = document.createElementNS(NS,'circle');
+  Object.entries({cx:100,cy:100,r,fill:'none',stroke:'var(--line)','stroke-width':34}).forEach(([k,v])=>bg.setAttribute(k,v));
+  svg.appendChild(bg);
+  for (const it of ch.items) {
+    const len = it.n/total*C;
+    const c = document.createElementNS(NS,'circle');
+    Object.entries({cx:100,cy:100,r,fill:'none',stroke:it.c,'stroke-width':34,
+      'stroke-dasharray':`${Math.max(len-gap,0.5)} ${C}`,'stroke-dashoffset':-off,transform:'rotate(-90 100 100)'}).forEach(([k,v])=>c.setAttribute(k,v));
+    const t = document.createElementNS(NS,'title'); t.textContent = `${it.l}: ${ch.fmt==='eur'?nf.format(it.n)+' €':it.n}`; c.appendChild(t);
+    svg.appendChild(c); off += len;
+  }
+  const big = document.createElementNS(NS,'text');
+  Object.entries({x:100,y:100,'text-anchor':'middle','font-family':'Bricolage Grotesque, system-ui, sans-serif','font-weight':700,'font-size':ch.center[0].length>4?24:32}).forEach(([k,v])=>big.setAttribute(k,v));
+  big.textContent = ch.center[0];
+  const sm = document.createElementNS(NS,'text');
+  Object.entries({x:100,y:122,'text-anchor':'middle','font-family':'IBM Plex Mono, monospace','font-size':10,opacity:.7}).forEach(([k,v])=>sm.setAttribute(k,v));
+  sm.textContent = ch.center[1];
+  svg.append(big, sm);
+
+  const ul = document.querySelector(`[data-legend="${key}"]`);
+  ul.innerHTML = ch.items.map(it => `<li><span class="sw" style="background:${it.c}"></span>
+    <span>${it.l}${it.d?`<small>${it.d}</small>`:''}</span>
+    <span class="n">${ch.fmt==='eur'?nf.format(it.n)+' €':it.n}</span>
+    <span class="p">${pf.format(it.n/total*100)} %</span></li>`).join('');
+}
+
+// Bars: days from handover
+const bars = [
+  {l:'Bis 7 Tage', n:16, c:V},
+  {l:'8–30 Tage', n:6, c:D},
+  {l:'Mehr als 30 Tage', n:6, c:S},
+];
+const bmax = 28;
+document.getElementById('bars').innerHTML = bars.map(b=>`<div class="bar"><span>${b.l}</span>
+  <div class="track"><div class="fill" style="width:${b.n/bmax*100}%;background:${b.c}"></div></div>
+  <span class="v">${b.n}</span></div>`).join('');
+
+// Table
+const src = {vendor:['vendor','Händler'], nap:['nap','kein Mangel'], transport:['transport','Transport'], none:['none','—']};
+const rows = [
+ ['C-001379','11.09.2025','574154','Einseitig abgefahrene Vorderreifen, Spur und weitere Punkte; Kunde 780 € Kompensation angeboten','vendor',1424.02,'An Händler appelliert, nicht erfasst'],
+ ['C-001706','31.10.2025','543345','Start-Stopp, Bremsenquietschen; Verschleiß abgelehnt','nap',82.03,''],
+ ['C-002058','15.12.2025','603860','Mängel nach Lieferung bei Dunkelheit, Rücklicht; 200 € Kompensation','transport',168.07,''],
+ ['C-002252','16.01.2026','608154','Zweiter Schlüssel, Ladekabel und Sommerreifen fehlen; 1.100 € angeboten','vendor',924.37,'„Auf den Händler“, nicht erfasst'],
+ ['C-002599','26.02.2026','625621','Sommerreifen fehlen, vom Händler entsorgt','vendor',0,'Nicht erfasst'],
+ ['C-002607','27.02.2026','614323','Defekter Fensterheberschalter Fahrerseite','nap',247,''],
+ ['C-002808','23.03.2026','632115','Kondenswasser in Scheinwerfern, lauter Reifen, Kratzer und Dellen','nap',294,''],
+ ['C-003077','22.04.2026','639583','Kratzer, defekter Ablagefach-Mechanismus; kompensiert','nap',414,''],
+ ['C-003173','04.05.2026','640564','Tempomat defekt, Software-Update, unregelmäßiges Laden','nap',91.41,''],
+ ['C-003204','06.05.2026','637165','Defekter Schlüssel, Full Link / CarPlay funktioniert nicht','nap',366.01,''],
+ ['C-003315','21.05.2026','643593','Ladekabel fehlt; 200 € Kompensation','vendor',168.07,'Mangel nicht anerkannt'],
+ ['C-003368','28.05.2026','647659','Ladekabel fehlt','vendor',168.07,'Mangel nicht anerkannt'],
+ ['C-003397','01.06.2026','610443','Fensterheber Fahrerseite; von CarGarantie übernommen','nap',120.19,''],
+ ['C-003424','03.06.2026','656738','Abdeckung Beifahrertür fehlt; 10 € Kompensation','nap',9,''],
+ ['C-003442','05.06.2026','656738','Kühlmittel auf Minimum, abgelehnt','nap',0,''],
+ ['C-003505','12.06.2026','656738','Batterieabdeckung fehlt, abgelehnt','nap',0,''],
+ ['C-003519','16.06.2026','608154','Klimaanlage (undichter Kondensator); von Allianz übernommen, ca. 1.500 €','nap',0,''],
+ ['C-003528','16.06.2026','658346','Pannenkit fehlt, Kunde hat es später gefunden','vendor',67,'Mangel nicht anerkannt'],
+ ['C-003615','24.06.2026','657197','Delle am hinteren Kotflügel, abgelehnt','nap',0,''],
+ ['C-003651','29.06.2026','637165','Ausfall des Bordcomputers, Software-Update','nap',286,''],
+ ['C-003764','13.07.2026','614323','Klimaanlage defekt; von Allianz übernommen','nap',1796.2,''],
+ ['C-004050','10.08.2026','660765','Sommerräder auf Alufelgen fehlen','vendor',0,'Räder nachgeliefert (B2B, 0 €)'],
+ ['C-004271','01.09.2026','673615','Lüfter brummt; Kunde hat nicht mitgewirkt','nap',0,''],
+ ['C-004413','14.09.2026','679829','Verschmutzter Innenraum, zerkratzte Stoßstange, Delle, Gurt, Fahrzeugbrief fehlt; 400 € Kompensation','vendor',336.13,'252,10 € netto'],
+ ['C-004591','29.09.2026','679577','Dellen auf dem Dach, Anhängerkupplung fehlt, Lackschaden (offen)','nap',0,'Händler antwortet nicht'],
+ ['C-004610','30.09.2026','660765','Warnmeldung 12-V-Batterie','nap',0,''],
+ ['C-004696','08.10.2026','684863','Nachweise über Service und Rückruf fehlen','vendor',0,'B2B, 0 €'],
+ ['C-004713','09.10.2026','680473','Ersatzschlüssel funktioniert nicht (offen)','none',0,''],
+];
+const ef = new Intl.NumberFormat('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
+document.getElementById('rows').innerHTML = rows.map(r=>`<tr><td class="num">${r[0]}</td><td style="white-space:nowrap">${r[1]}</td><td class="num">${r[2]}</td><td>${r[3]}</td>
+  <td><span class="chip ${src[r[4]][0]}">${src[r[4]][1]}</span></td><td class="num">${ef.format(r[5])}</td><td>${r[6]||'—'}</td></tr>`).join('');
+
+// Navigation
+const slides = [...document.querySelectorAll('.slide')];
+const pos = document.getElementById('pos');
+let cur = 0;
+const io = new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){cur=slides.indexOf(e.target);pos.textContent=`${cur+1} / ${slides.length}`}})},{threshold:.5});
+slides.forEach(s=>io.observe(s));
+const go = i => { i=Math.max(0,Math.min(slides.length-1,i)); slides[i].scrollIntoView({block:'start'}); slides[i].focus({preventScroll:true}); };
+document.getElementById('prev').onclick=()=>go(cur-1);
+document.getElementById('next').onclick=()=>go(cur+1);
+pos.onclick=()=>go(0);
+document.addEventListener('keydown',e=>{
+  if(e.target.closest('input,textarea'))return;
+  if(['ArrowDown','PageDown','ArrowRight',' '].includes(e.key)){e.preventDefault();go(cur+1)}
+  if(['ArrowUp','PageUp','ArrowLeft'].includes(e.key)){e.preventDefault();go(cur-1)}
+});
+</script>
+
+</body>
+</html>
